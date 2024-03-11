@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Receipt</title>
+
+    <!-- tailwind link from tailwindcss.com -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <style>
+        div {
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 10px;
+            height: auto;
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            border-style: dashed;
+            border-color: rgb(230, 225, 225);
+            border-width: 3px;
+
+        }
+
+        .btn {
+            margin-left: 43%;
+        }
+
+        body {
+            background-image: url('img/44.jpg');
+            /* background-repeat: no-repeat; */
+            /* opacity: 3; */
+        }
+    </style>
+
+
+</head>
+
+<body class="bg-gray-200">
+    <div class="bg-white text-sm">
+        <section class="text-center text-gray-500">
+            <h1 class="font-bold">FoodBaZZ</h1>
+            <p>Address, Street <br> number, city, country</p>
+            <p>www.fb.com/FoodBaZZ</p>
+            <p>Hotline:018########</p>
+            <p>--------------------------------------------</p>
+        </section>
+
+
+        <p class="text-gray-500">Reg No: <span>028429348234</span></p>
+        <p class="text-gray-500">Guest Bill</p>
+        <p class="text-gray-500">Date: 23-Jan-24 Time: 1:58 PM</p>
+        <p>-----------------------------------------------------------</p>
+        <table>
+            <tr>
+                <th class="px-3">Qty</th>
+                <th class="px-3">Item Name</th>
+                <th class="px-3">Price</th>
+                <th class="px-3">T.Price</th>
+            </tr>
+            <tr>
+                <td class="px-3">2</td>
+                <td class="px-3">Gangnam</td>
+                <td class="px-3 text-right">480</td>
+                <td class="px-3 text-right">960</td>
+            </tr>
+            </tr>
+            <tr>
+                <td class="px-3">1</td>
+                <td class="px-3">Spicy chicken pasta</td>
+                <td class="px-3 text-right">380</td>
+                <td class="px-3 text-right">380</td>
+            </tr>
+            </tr>
+            <tr>
+                <td class="px-3">1</td>
+                <td class="px-3">Hot Chocolate</td>
+                <td class="px-3 text-right">220</td>
+                <td class="px-3 text-right">220</td>
+            </tr>
+            </tr>
+            <tr>
+                <td class="px-3">2</td>
+                <td class="px-3">peri peri</td>
+                <td class="px-3 text-right">350</td>
+                <td class="px-3 text-right">700</td>
+            </tr>
+            <tr>
+                <td>-----------</td>
+                <td>-----------</td>
+                <td>-----------</td>
+                <td>-----------</td>
+            </tr>
+            <tr>
+
+                <td class="px-3" colspan="3">Total:</td>
+                <td class="px-3 text-right">7803</td>
+            </tr>
+            <tr>
+
+                <td class="px-3" colspan="3">Discount:</td>
+                <td class="px-3 text-right">00</td>
+            </tr>
+            <tr>
+
+                <td class="px-3" colspan="3">Vate:</td>
+                <td class="px-3 text-right">5%</td>
+            </tr>
+            </tr>
+            <tr>
+                <td>-----------</td>
+                <td>-----------</td>
+                <td>-----------</td>
+                <td>-----------</td>
+            </tr>
+            <tr>
+
+                <td class="px-3" colspan="3">Net Total:</td>
+                <td class="px-3 text-right">7803</td>
+            </tr>
+        </table>
+        <p>-----------------------------------------------------------</p>
+
+        <p>REMAINING AMOUNT : 7803</p>
+        <p>-----------------------------------------------------------</p>
+        <p>-----------------------------------------------------------</p>
+        <p>Powered by : 3S, www.3s-bd.com, 018########</p>
+
+
+
+    </div>
+
+
+    <span class="btn"><button
+            class="bg-green-500 text-white font-bold px-3 py-4 rounded-2xl hover:bg-green-400 mt-5">Download
+            Receipt</button></span>
+</body>
+
+</html>
