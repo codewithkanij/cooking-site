@@ -23,6 +23,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
 
+    <!--AOS Animation er jonno duita CDN link use korte hoy 1. CSS 2. JS -->
+    <!-- cdn link for on-scroll-animation from AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <style>
         .title {
             font-size: x-large;
@@ -52,16 +57,16 @@
 <body>
 
     <section class="bg-orange-500 flex font-extralight">
-        <div data-aos="fade-left" data-aos-duration="1500">
-            <img class="image" src="img/beef-wellington.jpg" alt="">
+        <div>
+            <img data-aos="zoom-in" class="image" class="image" src="img/beef-wellington.jpg" alt="">
         </div>
         <div class="text-slate-200 pt-20 ">
 
-            <h1 class="text-3xl font-bold ml-10" data-aos="fade-left">
+            <h1 class="text-3xl font-bold ml-10">
                 Beef Wellington
 
             </h1>
-            <h6 class="ml-10 mr-40 mt-3" data-aos="fade-right">
+            <h6 class="ml-10 mr-40 mt-3">
                 This is a classic beef Wellington recipe. <br> Use Aberdeen Angus beef if you can, as it has a
                 lovely,<br> buttery texture. The addition of truffle oil <br>gives this dish a decadent twist. <br>Serve
                 with dauphinoise potatoes
@@ -211,6 +216,12 @@
         </div>
 
     </footer>
+
+    <!-- cdn link for on-scroll-animation from AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
