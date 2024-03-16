@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Christmas cheesecake</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon" />
+
+
+    <!-- tailwind link from tailwindcss.com -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+
+
+    <!-- navbar -->
+         
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+
+    <!--====== footer icon link =====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+    <!--AOS Animation er jonno duita CDN link use korte hoy 1. CSS 2. JS -->
+    <!-- cdn link for on-scroll-animation from AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+    <style>
+        .title {
+            font-size: x-large;
+            font-weight: 700;
+        }
+
+        .image {
+            height: 400px;
+            width: 800px;
+        }
+
+        .step {
+            color: orange;
+            font-weight: 700;
+        }
+
+        .right-div p {
+            font-size: large;
+        }
+
+        .left-div p h2 {
+            font-size: large;
+        }
+
+        /*======== nav ============*/
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  padding: 0px 40px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  font-size: 30px;
+  color: orange;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #000000bb;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  flex: 1; /* Take up all available space */
+  justify-content: center; /* Center the items horizontally */
+  font-size: 1.5rem;
+  margin-right: auto;
+}
+
+.nav a {
+  padding: 5px 15px;
+  color: orange;
+  font-size: 20px;
+  text-decoration: none;
+  text-shadow: rgba(0, 0, 10, 0.434) 1px -2px 20px;
+}
+
+.nav a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  text-underline-position: under;
+  text-shadow: rgba(255, 136, 0, 0.654) 1px -2px 20px;
+}
+
+
+.nav__search,
+.nav__login {
+  font-size: 1.5rem;
+  color: #f99e66;
+  cursor: pointer;
+  transition: color 0.4s;
+  text-shadow: rgb(1, 0, 10) 1px -2px 30px;
+  text-decoration: none;
+}
+
+.nav__search:hover,
+.nav__login:hover {
+  color: #000000bb;
+  text-decoration: none;
+  align-items: center;
+}
+
+/*======= login dropdown =======*/
+
+.dropdown-one {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-one, .dropdown-content a {
+  list-style: none;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  position: absolute;
+  padding: 0.5rem 0px;
+  margin: 0.3rem 0.1rem;
+  background: rgb(249, 178, 85);
+  color: black;
+  box-shadow: 0 0 50px rgb(5, 2, 0);
+  border-radius: 0.5rem;
+  font-size: 12px;
+  display: none;
+}
+
+.dropdown-one:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: black;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+/* ... (your existing styles) */
+
+/* ===== search ========*/
+
+.search {
+  position: absolute;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: hsla(231, 28%, 90%, 0.1);
+  backdrop-filter: blur(24px);
+  padding: 8rem 1.5rem 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s;
+}
+
+.search__close {
+  position: absolute;
+  align-items: center;
+  top: 2rem;
+  left: 50%;
+  font-size: 2rem;
+  color: hsl(30, 96%, 52%);
+  cursor: pointer;
+}
+
+.search__form {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  background-color: hsl(31, 90%, 92%);
+  box-shadow: 0 8px 32px hsl(31, 90%, 51%);
+  padding-inline: 1rem;
+  border-radius: rgb(248, 238, 238) 5rem;
+  transform: translateY(-1rem);
+  transition: transform 0.4s;
+}
+
+.search__icon {
+  font-size: 1.25rem;
+  color: hsl(30, 96%, 56%);
+}
+
+.search__input {
+  width: 100%;
+  padding-block: 1rem;
+  background-color: hsl(31, 90%, 92%);
+  color: hsl(230, 12%, 40%);
+  border: #f2f2f2;
+}
+
+.search__input::placeholder {
+  color: hsl(230, 12%, 40%);
+}
+
+.show-search {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.show-search .search__form {
+  transform: translateY(0);
+}
+
+
+        @media (max-width: 1200px) {
+            .top {
+                padding: 0px 2%;
+            }
+
+            .nav {
+                margin-right: 10%;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .top {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .logo {
+                margin-bottom: 10px;
+            }
+
+            .nav {
+                position: static;
+                left: 0;
+                margin: 0;
+            }
+
+            .search {
+                padding: 4% 2% 0;
+            }
+        }
+
+        /* navbar sesh */
+    </style>
+</head>
+
+<body>
+
+
+    <!--  ============  nav bar ============-->
+<div class="top">
+    <a href="#" class="logo">FoodBuZZ</a>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="E:\food website project\Recipe\1st page\1st page.html">Recipe</a>
+        <a href="#">Order now</a>
+        <a href="E:\food website project\about us\index.html">About us</a>
+    </div>
+  
+    <div class="nav__actions">
+      <i class="ri-search-line nav__search" id="search-btn"></i>
+      <div class="dropdown-one" id="login-dropdown">
+          <a href="#" class="ri-user-line nav__login" id="login-btn"></a>
+          <div class="dropdown-content" id="login-dropdown-content">
+              <a href="E:\food website project\login,reg,forget\user\user profile\profile.html">Profile</a>
+              
+              <a href="#">Settings</a>
+              <a href="E:\food website project\login,reg,forget\user\logout\logout-confirmation.html">Logout</a>
+          </div>
+      </div>
+  </div>
+<!--============= search =================-->
+    <div class="search" id="search">
+        <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+</div>
+
+
+    <!-- navbar sesh -->
+
+    <section class="bg-orange-500 flex font-extralight">
+        <div>
+            <img data-aos="zoom-in" class="image" src="img/Christmas-cheesecake.jpg" alt="">
+        </div>
+        <div class="text-slate-200 pt-20 ">
+
+            <h1 class="text-3xl font-bold ml-10">
+                Christmas cheesecake</h1>
+            <h6 class="ml-10 mr-40 mt-3">
+                Everyone will enjoy a slice of this Christmas cake, which can be baked and matured up to eight <br>weeks
+                before Christmas. Feed the cake weekly with your choice of brandy, rum or <br>whisky for extra moisture
+                and a warming flavour
+            </h6>
+            <div class="flex recipe-icons mt-7">
+                <article class="ml-20 text-center">
+                    <i class="fas fa-clock"></i>
+                    <h5>prep time</h5>
+                    <p>10 min.</p>
+                </article>
+                <article class=" ml-20 text-center">
+                    <i class="far fa-clock"></i>
+                    <h5>cook time</h5>
+                    <p>10 min.</p>
+                </article>
+                <article class=" ml-20 text-center">
+                    <i class="fas fa-user-friends "></i>
+                    <h5>serving</h5>
+                    <p>6 servings</p>
+                </article>
+            </div>
+        </div>
+
+    </section>
+    <section class="flex">
+        <div class="w-auto mx-10 my-10 right-div">
+            <h1 class="title">Instructions</h1>
+            <h2 class="step my-2">Step 1</h2>
+            <p class=" my-2">Combine all the ingredients plus 1 tsp of salt in a large bowl and massage with your hands
+                to
+                make sure the marinade has coated the meat well. <br>Cover the bowl and put in the fridge for at least 1
+                hr but no more than 4 hrs, or the acidity from the lime will tenderise the meat too much.
+
+
+
+            </p>
+            <hr>
+            <h2 class=" step my-2">Step 2</h2>
+            <p class=" my-2">If you’re using an outdoor grill or barbecue, or an indoor grill, heat it to medium-high.
+                If
+                you’re using a griddle pan, heat over a medium-high heat and brush generously with oil.
+
+
+
+            </p>
+            <hr>
+            <h2 class="step my-2">Step 3</h2>
+            <p class=" my-2">Thread the beef chunks onto skewers, adding five chunks to each one. Cook the beef for 3-4
+                mins
+                on each side, leaving it slightly pink in the middle but nicely charred on the outside.
+
+                Serve the tikka with your chosen accompaniments. If you cooked it in a griddle pan, drizzle over
+                any excess juices from the pan to serve.
+
+
+
+            </p>
+            <hr>
+        </div>
+
+        <div class=" w-96 mx-10 my-10 left-div">
+            <h1 class="title my-2">Ingredients</h1>
+            <p class=" my-2">600g beef fillet, cut into 2.5cm cubes
+
+            </p>
+            <hr>
+            <p class=" my-2">vegetable oil
+            </p>
+            <hr>
+            <p class=" my-2">3 tbsp garlic paste
+
+            </p>
+            <hr>
+            <p class=" my-2">2 tbsp ground dried lime
+
+
+            </p>
+            <hr>
+            <p class=" my-2">½ tsp ground ginger
+
+
+            </p>
+            <hr>
+            <p class=" my-2">1 tbsp freshly ground black pepper
+
+
+            </p>
+            <hr>
+            <p class=" my-2">1 tsp ground cumin
+
+
+            </p>
+            <p class=" my-2">3 tbsp vegetable oil, plus extra for brushing
+
+
+
+            </p>
+            <hr>
+            <p class=" my-2">3 tbsp garlic paste
+
+            </p>
+            <hr>
+
+            <h1 class="title">Tools</h1>
+            <h2 class=" my-2">Hand Blender</h2>
+            <hr>
+            <h2 class=" my-2">Large Heavy Pot With Lid</h2>
+            <hr>
+            <h2 class=" my-2">Measuring Spoons</h2>
+            <hr>
+            <h2 class=" my-2">Measuring Cups</h2>
+            <hr>
+        </div>
+    </section>
+
+
+    <footer class="text-center bg-black text-white pt-10">
+        <div class="social-icons">
+            <p class="font-bold">Connect with us</p><br>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook hover:text-blue-700"></i></a>
+            <a href="https://twitter.com/i/flow/signup" target="_blank"><i
+                    class="fab fa-twitter hover:text-blue-400"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i
+                    class="fab fa-instagram hover:text-orange-500"></i></a>
+            <a href="https://www.pinterest.com/" target="_blank"><i
+                    class="fab fa-pinterest  hover:text-red-700"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube hover:text-red-700"></i></a>
+            <br>
+        </div>
+        <div class="contact-us">
+            <p>Contact-info</p>
+            <p>Email: <a href="#" class="hover:underline hover:text-orange-300">foodbuzz@gmail.com</a></p>
+            <p>Phone: <span class=" hover:text-orange-300">+1 (123) 456-7890</span></p>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024 Foodbuzz. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+
+
+    <!-- cdn link for on-scroll-animation from AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+
+        // navbar
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const search = document.getElementById('search'),
+                searchBtn = document.getElementById('search-btn'),
+                searchClose = document.getElementById('search-close');
+
+            /* Search show */
+            searchBtn.addEventListener('click', () => {
+                search.classList.add('show-search');
+            });
+
+            /* Search hidden */
+            searchClose.addEventListener('click', () => {
+                search.classList.remove('show-search');
+            });
+        })
+    </script>
+</body>
+
+</html>

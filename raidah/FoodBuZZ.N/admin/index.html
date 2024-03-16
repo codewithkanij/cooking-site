@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- You can customize this stylesheet -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: background-color 0.3s;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        header:hover {
+            background-color: #0056b3;
+        }
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+            text-align: center;
+            border-bottom: 4px solid #007bff;
+            transition: background-color 0.3s;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+            transition: transform 0.3s;
+        }
+        nav ul li a {
+            display: block;
+            padding: 15px 20px;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcd00;
+        }
+        nav ul li:hover {
+            transform: translateY(-3px);
+        }
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        section {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+        section:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        aside {
+            flex: 0 0 300px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+        aside:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        footer:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><i class="fas fa-cogs"></i> Admin Dashboard</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <!-- Add more menu items as needed -->
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Welcome to FoodBuZZ Admin Dashboard</h2>
+            <p>This is the main content area where you can display various admin-related information.</p>
+        </section>
+        <aside>
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">Manage Users</a></li>
+                <li><a href="#">View Reports</a></li>
+                <li><a href="#">Settings</a></li>
+                <!-- Add more quick links as needed -->
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        &copy; 2024 Admin Page. All rights reserved.
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
